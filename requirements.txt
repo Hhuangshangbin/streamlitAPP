@@ -2,5 +2,5 @@ streamlit==1.30.0
 lifelines
 matplotlib-inline==0.1.6
 pandas==2.0.3
-PIL
+Pillow==9.3.0
 
