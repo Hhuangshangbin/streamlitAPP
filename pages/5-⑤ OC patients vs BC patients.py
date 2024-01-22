@@ -13,8 +13,13 @@ Cox analysis showed that patients with severity 3 had a significantly higher ris
 
 from PIL import Image
 st.image(Image.open("f3.png"))
-st.markdown("### Download [Test Cases](链接：https://pan.baidu.com/s/1bugXjKdSFU1wdxhx-MGhZw?pwd=2558) here")
+st.markdown("### Download [Test Cases](https://pan.baidu.com/s/1bugXjKdSFU1wdxhx-MGhZw?pwd=2558) here")
 st.markdown("#### :blue[Example:]")
+st.download_button('OR DOWNLOAD HERE', 'NC_data1224.csv',
+                   file_name=None, mime=None,
+                   key=None, help=None,
+                   on_click=None, args=None,
+                   kwargs=None)
 
 data = pd.read_csv('NC_data1224.csv')
 st.write(data)
