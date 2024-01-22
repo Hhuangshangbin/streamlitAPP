@@ -18,7 +18,7 @@ new_patient = NC_patient[NC_patient.iloc[:, -1] == 'ON']
 from PIL import Image
 st.image(Image.open("fig10.png"))
 st.markdown("### Download [Test Cases](https://pan.baidu.com/s/1bugXjKdSFU1wdxhx-MGhZw?pwd=2558) here")
-st.download_button('OR DOWNLOAD HERE',file_name='ONBP.csv')
+
 st.markdown("#### :blue[Example:]")
 
 data = pd.read_csv('ONBP.csv',encoding="gb18030")
