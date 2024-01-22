@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from pylab import mpl
 
-st.set_page_config(page_title="① ON patients vs. BP patients", page_icon="📈")
+st.set_page_config(page_title="③ NA patients vs. BP patients", page_icon="📈")
 
-st.markdown("# ① ON patients vs. BP patients")
+st.markdown("# ③ NA patients vs. BP patients")
 st.write(
     """This is the result of the population survival curves of ON patients and BP patients, which shows that the log-rank is statistically significant, but the significant relationship, after using multifactorial cox analysis, is still relevant for comparative studies between ON patients and BP patients.
 """
@@ -16,7 +16,7 @@ st.write(
 NC_patient=pd.read_csv("NABP.csv",encoding="gb18030")
 new_patient = NC_patient[NC_patient.iloc[:, -1] == 'ON']
 from PIL import Image
-st.image(Image.open("fig10.png"))
+st.image(Image.open("nabp.png"))
 st.markdown("### Download [Test Cases](链接：https://pan.baidu.com/s/1bugXjKdSFU1wdxhx-MGhZw?pwd=2558) here")
 st.markdown("#### :blue[Example:]")
 
