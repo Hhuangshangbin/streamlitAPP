@@ -29,6 +29,7 @@ if file is not None:
 if st.button('**Submit the data**'):
     if file is None:
         st.error('ERROR: No files uploaded!')
-    st.image(Image.open("ocbc.png"))
-    st.image(Image.open("xxt.png"))
-    st.balloons()
+    else:
+        st.image(Image.open("ocbc.png"))
+        st.image(Image.open("xxt.png"))
+        st.balloons()

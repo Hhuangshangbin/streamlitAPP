@@ -28,7 +28,8 @@ if file is not None:
 if st.button('**Submit the data**'):
     if file is None:
         st.error('ERROR: No files uploaded!')
-    st.image(Image.open("myplot.png"))
-    st.image(Image.open("d2.png"))
-    st.image(Image.open("d3.png"))
-    st.balloons()
+    else:
+        st.image(Image.open("myplot.png"))
+        st.image(Image.open("d2.png"))
+        st.image(Image.open("d3.png"))
+        st.balloons()
