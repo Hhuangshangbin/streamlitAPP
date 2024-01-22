@@ -10,7 +10,11 @@ st.set_page_config(page_title="③ NA patients vs. BP patients", page_icon="📈
 
 st.markdown("# ③ NA patients vs. BP patients")
 st.write(
-    """This is the result of the population survival curves of ON patients and BP patients, which shows that the log-rank is statistically significant, but the significant relationship, after using multifactorial cox analysis, is still relevant for comparative studies between ON patients and BP patients.
+    """ ③ NA patients VS BP patients and ② NC patients VS BP patients
+NA and BP patients
+The log-rank was non-significant, but the difference was more pronounced before 10 days.
+NC and BP patients
+The log-rank was strongly significant and the mortality rate was higher in NC patients (27.2%) than in BP patients (19.4%).
 """
 )
 NC_patient=pd.read_csv("NABP.csv",encoding="gb18030")

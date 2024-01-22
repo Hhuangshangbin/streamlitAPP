@@ -6,7 +6,8 @@ st.set_page_config(page_title="⑤ OC patients vs. BC patients", page_icon="📈
 
 st.markdown("# ⑤ OC patients vs. BC patients")
 st.write(
-    """This is the result of the population survival curves of ON patients and BP patients, which shows that the log-rank is statistically significant, but the significant relationship, after using multifactorial cox analysis, is still relevant for comparative studies between ON patients and BP patients.
+    """Based on the difference in survival between NC and BP patients, we performed an intra-patient comparison in category C i.e. (OC patients and BC patients), and the results of the survival curves are shown on the left, with a significant difference in survival, with OC patients surviving better than BC patients; it is clear that the poorer survival of NC patients than BP patients is a result of the over-representation of BC patients in the population.
+Cox analysis showed that patients with severity 3 had a significantly higher risk of death compared to patients with severity 1, whereas patients with OC had a lower risk compared to patients with BC and those using noninvasive ventilation.
 """
 )
 

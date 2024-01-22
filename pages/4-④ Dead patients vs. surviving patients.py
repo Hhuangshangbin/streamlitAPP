@@ -6,8 +6,9 @@ st.set_page_config(page_title="④ Dead patients vs. surviving patients", page_i
 
 st.markdown("# ④ Dead patients vs. surviving patients")
 st.write(
-    """This is the result of the population survival curves of ON patients and BP patients, which shows that the log-rank is statistically significant, but the significant relationship, after using multifactorial cox analysis, is still relevant for comparative studies between ON patients and BP patients.
-"""
+    """To further assess the robustness and usability of subphenotyping, we trained a predictive model for subphenotyping and used it to predict subphenotypic membership in an external validation cohort. Clinical variables that were cluster analyzed using laboratory tests were used as candidate predictors. The trained predictive model (XGBoost classifier) achieved very high performance in predicting each subphenotype.
+    The SHAP identified the above five key factors as influencing the model, with respiration rate (resp_rate) being the most influential feature in the model predictions. This suggests that changes in respiration rate have a significant effect on model output, and that higher respiration rates may increase the likelihood of model predictions.
+    """
 )
 
 from PIL import Image
